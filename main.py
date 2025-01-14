@@ -47,7 +47,7 @@ def conflict():
         try:
             gdf1 = gpd.read_file(shapefile1)
             gdf2 = gpd.read_file(
-                os.path.join('Image_Conflict_Arauca', 'static', 'vocation', 'vocation_Arauca.shp')
+                os.path.join('static', 'vocation', 'vocation_Arauca.shp')
             )
 
             if gdf1.crs != gdf2.crs:
